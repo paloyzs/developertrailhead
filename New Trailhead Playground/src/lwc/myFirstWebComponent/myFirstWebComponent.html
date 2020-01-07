@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="ContactInformation" icon-name="custom:custom14">
+            <div id="waiting" if:false={ready} class="loading-div">Loading.....</div>
+            
+            <div id="display" class="slds-m-around_medium unloading-div" if:true={ready}>
+                <!--<template for:each={contacts} for:item="contact">
+                        {name} => {contact.Name}, {contact.Title}, {contact.Id}
+                </template>-->
+                <div style="height: 300px;">
+                        <lightning-datatable
+                                key-field="id"
+                                data={contacts}
+                                columns={columns}>
+                        </lightning-datatable>
+                    </div>
+            </div>
+    </lightning-card>
+</template>
