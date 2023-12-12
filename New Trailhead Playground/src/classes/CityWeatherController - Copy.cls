@@ -3,7 +3,7 @@ public with sharing class CityWeatherController {
     public static String appKey = '8a1f5f5fee63a6d8b56d346a9b02e63a';
     public static String endPoint = 'http://api.openweathermap.org/data/2.5/weather';
     public static String unit = '&units=metric';
-    //Sample 22345
+    //Sample 1347839
     @AuraEnabled(cacheable = true)
     public static ResponseDTO getCityWeather(String cityName, String latLon){
         
